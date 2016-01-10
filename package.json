@@ -1,0 +1,16 @@
+{
+  "name": "new-app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Author Name Here",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "^1.7.2",
+    "express": "^4.13.3",
+    "nodemon": "^1.8.1"
+  }
+}
