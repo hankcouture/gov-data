@@ -6,11 +6,12 @@
   "scripts": {
     "start": "node server.js"
   },
-  "author": "Author Name Here",
+  "author": "Hank Couture",
   "license": "MIT",
   "dependencies": {
     "bower": "^1.7.2",
     "express": "^4.13.3",
-    "nodemon": "^1.8.1"
+    "nodemon": "^1.8.1",
+    "requestify": "^0.1.17"
   }
 }
