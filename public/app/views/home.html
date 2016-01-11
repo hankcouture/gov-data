@@ -1,7 +1,10 @@
 <div class="chart-container">
 	<p>US Unemployment Rate</p>
-	<canvas id="line" class="chart chart-line" chart-data="data"
-  chart-labels="labels" chart-legend="true" chart-series="series"
-  chart-click="onClick" >
-</canvas> 
+	<canvas id="line" class="chart chart-line" chart-data="unemploymentData.data" chart-labels="unemploymentData.labels" chart-legend="true" chart-series="unemploymentData.series"chart-click="onClick" ></canvas> 
+
+	<p>Avg. Weekly Hours per Worker</p>
+	<canvas id="line" class="chart chart-line" chart-data="hoursData.data" chart-labels="hoursData.labels" chart-legend="true" chart-series="hoursData.series"chart-click="onClick" ></canvas> 
+
+	<p>Avg. Hourly Pay per Worker</p>
+	<canvas id="line" class="chart chart-line" chart-data="wagesData.data" chart-labels="wagesData.labels" chart-legend="true" chart-series="wagesData.series"chart-click="onClick" ></canvas> 
 </div>
