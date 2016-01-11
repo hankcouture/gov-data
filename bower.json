@@ -1,8 +1,10 @@
 {
   "name": "new-app",
   "version": "0.0.1",
+  "directory" : "public/",
   "dependencies": {
-    "Chart.js": "~1.0.2"
+    "Chart.js": "~1.0.2",
+    "angular-chart.js": "~0.8.8"
   },
   "private": true
 }

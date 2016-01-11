@@ -10,11 +10,10 @@ app.use(express.static(__dirname + '/public'));
 app.get('/data', function(req, res){
 	requestify.get('http://api.bls.gov/publicAPI/v1/timeseries/data/LNS14000000')
 	  .then(function(response) {
-	      // Get the response body (JSON parsed or jQuery object for XMLs)
-	      response.getBody();
-	      console.log(response)
+	  	// Get the response body (JSON parsed or jQuery object for XMLs)
+	  	var data = response.getBody();
     	res.setHeader('Content-Type', "application/json");
-    	res.status(200).send(JSON.stringify(response));
+    	res.status(200).send(data);
 	  }
 	);
 });

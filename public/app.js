@@ -1,18 +1,21 @@
 var app = angular.module('app', [
-  'app.home',
+  'home',
+  'chart.js',
   'ui.router'
-])
+  ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-  //
-  // For any unmatched url, redirect to /home
-  $urlRouterProvider.otherwise("/home");
-  //
-  // Now set up the states
-  $stateProvider
+    'use strict';
+
+    // For any unmatched url, redirect home
+    $urlRouterProvider.otherwise('/home');
+
+    $stateProvider
+
+    // chart page
     .state('home', {
-      url: "/home",
-      templateUrl: "app/views/home.html",
-      controller: "HomeController"
-    })
+        url: '/home',
+        templateUrl: 'app/views/home.html',
+        controller: 'HomeCtrl'
+    });
 });
